@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+header {
+
+  background-color: #333;
+  padding: 8px 20px;
+  color: #fff;
+  min-height: 120px; /* Optional control */
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#h1, #h2, #h3 {
+  flex: 1;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#h1
+{
+  width: 30%;
+  height: auto;
+  float: left;
+  justify-content: center;
+}
+#h2
+{
+  width: 50%;
+  float: left;
+  margin-top: 60px;
+}
+#h3
+{
+  width: 20%;
+  float: left;
+  margin-top: 60px;
+}
+
+
+#logo
+{
+    width: 160px;
+    height: 120px;
+    margin-left: 85px;
+    margin-top: 14px;
+}
+
+
+#ph
+{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 5px;
+}
+#ph:hover
+{
+  color: #ff6600;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+}
+#icon
+{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+#icon:hover
+{
+  color:#ff6600;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: "Georgia";
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+.contact-section {
+  padding: 60px 20px;
+  background-image: url('your-background.jpg'); /* Replace with your travel image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-container h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1em;
+  color: #666;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.contact-form button {
+  display: inline-block;
+  background-color: #b22222;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #8b1a1a;
+}
+
+
+/* Responsive */
+@media (max-width : 1440px) {
+  #h2 {
+    width: 50%;
+    float: left;
+    margin-top: 0px !important;
+  }
+}
+
+/* Base default: for large screens (desktop) */
+/* You already handled it well — no changes needed here */
+
+/* ----------- Tablets (768px to 1024px) ----------- */
+@media (max-width: 1024px) {
+    nav.active {
+        margin-top: 0px !important;
+        display: flex;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+  #h1, #h2, #h3 {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+        header {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    header {
+    background-color: #333;
+    padding: 8px 20px;
+    color: #fff;
+    min-height: 120px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+      /* #logo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    } */
+     
+    #logo {
+    width: 96px;
+    height: auto;
+    margin-left: -180px;
+    margin-top: 18px;
+}
+
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* ----------- Mobile Phones (below 768px) ----------- */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding-bottom: 20px;
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: 46px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    padding: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  footer {
+    padding: 15px;
+  }
+
+  .p4 {
+    font-size: 14px;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+  }
+}
+
+/* Base footer desktop */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff6347;
+}
+
+.p4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5em;
+  }
+}
