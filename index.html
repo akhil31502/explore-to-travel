@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./index.css">
+   <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@500;700&family=Poppins:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+<link rel="icon" type="image/png" href="../../Assets/Images/favicon.png.png">
+
+<script>
+  function toggleNav() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+</head>
+<body>
+<header>
+  <div id="h1">
+    <img id="logo" src="../../Assets/Images/logo1.tour.png" href="./index.html" alt="travel">
+  </div>
+
+  <!-- Hamburger Icon -->
+ <div class="hamburger" onclick="toggleNav()">
+  <i class="fas fa-bars"></i>
+</div>
+
+  <!-- Navigation -->
+ <div id="h2">
+    <nav id="nav" class="active">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about/about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./about/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  
+</header>
+
+
+<div id="container"> 
+    <div id="container1"></div>
+    <div id="container2">
+        <h1>Warm & Welcoming </h1>
+        <p id="p2">Your journey begins here – welcome to a world of travel like no other.</p>
+        <button id="pbtn" onclick="location.href='./services.html'">
+  <span class="btn-text">Services</span>
+</button>
+
+    </div>
+    <div id="container3"></div>
+</div>
+
+<div id="c">
+    <div id="c1"></div>
+    <div id="c2">
+    <div class="p1">
+  Travel opens the door to new cultures, breathtaking landscapes, and unforgettable experiences. It enriches the soul, offering memories that last a lifetime.
+</div>
+
+    </div>
+    <div id="c3"></div>
+</div>
+
+ <!-- Popular Destinations Section -->
+ <section class="destinations" id="destinations">
+  <h2>Popular Destinations</h2>
+  <div class="destination-cards">
+    <div class="card animate-left">
+      <img src="../../Assets/Images/paris.home.jpg" alt="Paris">
+      <h3>Paris, France</h3>
+      <p>The city of lights awaits you with its charm and romance.</p>
+    </div>
+    <div class="card animate-top">
+      <img src="../../Assets/Images/malvadies.home.jpg" alt="Maldives">
+      <h3>Maldives</h3>
+      <p>Crystal-clear waters and white sandy beaches just for you.</p>
+    </div>
+    <div class="card animate-right">
+      <img src="../../Assets/Images/tokyo.home.avif" alt="Japan">
+      <h3>Tokyo, Japan</h3>
+      <p>Experience the vibrant culture and technology of Tokyo.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section class="why-choose-us">
+  <div class="container">
+    <h2>Why Choose Us</h2>
+    <p>
+      We bring you unforgettable travel experiences, guided by experts and personalized to your dreams. From hidden gems to iconic landmarks, every journey is curated with care.
+    </p>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Expert Guides</h3>
+        <p>Travel with experienced guides who know the culture, history, and hidden gems.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Customized Itineraries</h3>
+        <p>Tailored tours designed to match your interests, budget, and pace.</p>
+      </div>
+      <div class="feature-box">
+        <h3>24/7 Support</h3>
+        <p>We're here whenever you need us – before, during, and after your trip.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Background Static Section -->
+<section class="static-bg-section">
+  <div class="content">
+    <h2>Discover Hidden Gems</h2>
+    <p class="p3">Explore unique destinations off the beaten path. Let us take you where few have gone before, with expert guides and unforgettable experiences.</p>
+    <a href="./about/about.html" class="btn"><span>Explore Now</span></a>
+
+  </div>
+</section>
+
+<!-- Intro Section Before CTA -->
+<section class="pre-cta-section">
+  <div class="container">
+    <h2>Why Travel With Us?</h2>
+    <p>We craft extraordinary travel experiences, tailored to your dreams. Let our expertise guide your next unforgettable journey.</p>
+  </div>
+</section>
+
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>Ready for Your Next Adventure?</h2>
+    <p class="p3">Embark on unforgettable journeys across the globe. Let us guide you to places you’ve only dreamed of.</p>
+    <a href="././about/contact.html" class="cta-btn">Start Planning</a>
+  </div>
+</section>
+
+
+<footer>
+    <p class="p4">&copy; 2025 My Portfolio. All rights reserved.</p>
+    <div>
+       <a href="https://www.linkedin.com/in/masapogu-thirumala-09657b25a/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/akhil31502" target="_blank">GitHub</a>
+    </div>
+</footer>
+</body>
+</html>

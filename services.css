@@ -1,0 +1,627 @@
+/* Reset & Fonts */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+header {
+
+  background-color: #333;
+  padding: 8px 20px;
+  color: #fff;
+  min-height: 120px; /* Optional control */
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#h1, #h2, #h3 {
+  flex: 1;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#h1
+{
+  width: 30%;
+  height: auto;
+  float: left;
+  justify-content: center;
+}
+#h2
+{
+  width: 50%;
+  float: left;
+  margin-top: 60px;
+}
+#h3
+{
+  width: 20%;
+  float: left;
+  margin-top: 60px;
+}
+
+
+#logo
+{
+    width: 160px;
+    height: 120px;
+    margin-left: 85px;
+    margin-top: 14px;
+}
+
+
+#ph
+{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 5px;
+}
+#ph:hover
+{
+  color: #ff6600;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+}
+#icon
+{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+#icon:hover
+{
+  color:#ff6600;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: "Georgia";
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Ensure text is white */
+  text-align: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.video-background iframe {
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.6); /* Increased darkness to 60% */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 20px;
+  color: white; /* Ensure contrast */
+}
+
+.slide-texts {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #fff; /* Force text color */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* Add shadow for better readability */
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media screen and (max-width: 768px) {
+  .slide {
+    font-size: 1.5rem;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
+}
+
+
+/* Services */
+.services {
+  display: flex;
+  gap: 40px;
+  padding: 80px 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-card {
+  width: 300px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.service-img {
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.service-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+.service-img:hover::before {
+  background: rgba(0,0,0,0);
+}
+.service-card:hover h3 {
+  color: #b22222;
+}
+
+/* Features */
+.features {
+  padding: 80px 100px;
+  background-color: #f3f3f3;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+.feature.reverse {
+  flex-direction: row-reverse;
+  
+}
+.feature img {
+  width: 50%;
+  border-radius: 15px;
+  animation: slideInLeft 1s ease forwards;
+}
+.feature.reverse img {
+  animation: slideInRight 1s ease forwards;
+}
+.feature-text {
+  flex: 1;
+  animation: fadeIn 1.5s ease;
+}
+.feature-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.feature-text p {
+  line-height: 1.6;
+}
+
+/* CTA */
+.cta {
+  background: url('../../Assets/Images/services_adventures_jpg.jpg') center/cover no-repeat fixed;
+  color: white;
+  text-align: center;
+  padding: 200px 20px;
+}
+#pbtn {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;;
+  font-size: 18px;
+  width: 135px;
+  height: 45px;
+  background-color: #b22222;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  overflow: hidden; /* ensures pseudo-element stays inside */
+  z-index: 1;
+  margin: 20px auto; /* centers horizontally */
+  display: block;    /* needed for margin auto to work */
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Background hover effect */
+#pbtn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #7597de;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0 0 5px 5px;
+}
+
+/* On hover, fill the background from top */
+#pbtn:hover::before {
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Text stays above the hover background */
+.btn-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+#pbtn:hover .btn-text {
+  color: #fff;
+}
+/* Footer */
+/* footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+} */
+
+/* Animations */
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideInRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width : 1440px) {
+  #h2 {
+    width: 50%;
+    float: left;
+    margin-top: 0px !important;
+  }
+}
+
+/* Base default: for large screens (desktop) */
+/* You already handled it well — no changes needed here */
+
+/* ----------- Tablets (768px to 1024px) ----------- */
+@media (max-width: 1024px) {
+    nav.active {
+        margin-top: 0px !important;
+        display: flex;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+  #h1, #h2, #h3 {
+    width: 88%;
+    float: none;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+        header {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    header {
+    background-color: #333;
+    padding: 8px 20px;
+    color: #fff;
+    min-height: 120px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+      /* #logo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    } */
+     
+    #logo {
+    width: 96px;
+    height: auto;
+    margin-left: -180px;
+    margin-top: 18px;
+}
+
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* ----------- Mobile Phones (below 768px) ----------- */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding-bottom: 20px;
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: 46px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    padding: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  footer {
+    padding: 15px;
+  }
+
+  .p4 {
+    font-size: 14px;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+  }
+}
+
+/* Base footer desktop */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff6347;
+}
+
+.p4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* === Typography Scaling === */
+body {
+  font-size: 1rem; /* Base 16px */
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 0.98rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .service-card p,
+  .feature-text p,
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .feature-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .slide {
+    font-size: 1.3rem;
+  }
+
+  .feature-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 0.95rem;
+    padding: 10px 25px;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* === Responsive Services Section === */
+@media (max-width: 768px) {
+  .services {
+    padding: 60px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}
+
+/* === Responsive Features Section === */
+@media (max-width: 768px) {
+  .features {
+    padding: 60px 20px;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature img {
+    width: 100%;
+  }
+}
+
+/* === Responsive CTA Section === */
+@media (max-width: 768px) {
+  .cta {
+    padding: 80px 15px;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+  }
+}
+
+/* === Responsive Hero Section === */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .slide-texts {
+    height: 80px;
+  }
+
+  .slide {
+    font-size: 1.2rem;
+  }
+}

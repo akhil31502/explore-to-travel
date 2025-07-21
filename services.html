@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <link rel="stylesheet" href="./services.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="../../Assets/Images/favicon.png.png">
+
+  
+  <script>
+  function toggleNav() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+
+</head>
+<body>
+
+<header>
+  <div id="h1">
+    <img id="logo" src="../../Assets/Images/logo1.tour.png" href="./index.html" alt="travel">
+  </div>
+
+  <!-- Hamburger Icon -->
+ <div class="hamburger" onclick="toggleNav()">
+  <i class="fas fa-bars"></i>
+</div>
+
+  <!-- Navigation -->
+ <div id="h2">
+    <nav id="nav" class="active">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about/about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./about/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="video-background">
+    <iframe width="100%" height="100%"
+      src="https://www.youtube.com/embed/Scxs7L0vhZ4?autoplay=1&mute=1&loop=1&controls=0&playlist=Scxs7L0vhZ4"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="slide-texts">
+      <div class="slide active">Discover New Horizons</div>
+      <div class="slide">Uncover Hidden Destinations</div>
+      <div class="slide">Experience Culture Deeply</div>
+      <div class="slide">Your Journey, Your Way</div>
+      <div class="slide">Start Exploring Today</div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Services Pods -->
+<section class="services">
+  <div class="service-card">
+    <div class="service-img" style="background-image: url('../../Assets/Images/services_tour_guide.jpg');"></div>
+    <h3>Guided Tours</h3>
+    <p>Personalized and knowledgeable local guides to show you around top destinations.</p>
+  </div>
+  <div class="service-card">
+    <div class="service-img" style="background-image: url('../../Assets/Images/services_luxury_resorts.jpg');"></div>
+    <h3>Luxury Resorts</h3>
+    <p>Stay at the finest resorts with exclusive amenities and services curated for comfort.</p>
+  </div>
+  <div class="service-card">
+    <div class="service-img" style="background-image: url('../../Assets/Images/services_adventures_jpg.jpg');"></div>
+    <h3>Adventure Packages</h3>
+    <p>Thrilling activities like trekking, scuba diving, and safaris tailored for you.</p>
+  </div>
+</section>
+
+<!-- Animated Feature Section -->
+<section class="features">
+  <div class="feature">
+    <img src="../../Assets/Images/services_custom_adventures.jpg" alt="Adventure" >
+    <div class="feature-text">
+      <h2>Custom Adventures</h2>
+      <p>Build your dream itinerary with our custom package builder.
+Total freedom, complete fun — your trip, your way.
+Pick destinations, experiences, and stays that match your vibe.
+From luxury escapes to offbeat adventures, it’s all in your hands.
+Design it, live it, love every moment of your personalized journey.</p>
+    </div>
+  </div>
+  <div class="feature reverse">
+    <img src="../../Assets/Images/services_relax.jpg" alt="Relaxation">
+    <div class="feature-text">
+      <h2>Relax & Rejuvenate</h2>
+      <p>We offer spa retreats, wellness programs, and island getaways for true relaxation.
+Rejuvenate your body, mind, and soul in serene, handpicked destinations.
+Enjoy holistic therapies, guided meditations, and scenic escapes.
+Indulge in tranquil beaches, lush nature, and peaceful surroundings.
+Let stress melt away as you unwind with personalized care and comfort.
+Because your well-being deserves more than just a vacation — it deserves a renewal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+  <div class="cta-content">
+    <h2>Ready to Travel?</h2>
+    <p>Get in touch with us today to start your dream journey.</p>
+    <button id="pbtn" onclick="window.location.href='./about/contact.html';">
+  <span class="btn-text">Contact Us</span>
+</button>
+
+  </div>
+</section>
+
+   <footer>
+    <p class="p4">&copy; 2025 My Portfolio. All rights reserved.</p>
+    <div>
+        <a href="https://www.linkedin.com/in/masapogu-thirumala-09657b25a/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/akhil31502" target="_blank">GitHub</a>
+    </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('nav').classList.toggle('active');
+  }
+</script>
+</body>
+</html>
